@@ -16,10 +16,10 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
 }
 
-.small-container {
+.little-container {
     max-width: 900px;
     margin: 0px auto;
     padding: 30px;
@@ -30,6 +30,26 @@ header {
     justify-content: space-around;
     flex-shrink: 0;
     flex-grow: 1;
+}
+
+.small-box {
+    border: 1px dashed black;
+    background-color: pink;
+    flex-basis: 30%;
+}
+
+.big-box {
+    border: 1px dashed black;
+    background-color: lightskyblue;
+    flex-basis: 70%;
+    min-height: 450px;
+}
+
+.xxl-box {
+    border: 1px dashed black;
+    background-color: green;
+    flex-basis: 100%;
+    min-height: 700px;
 }
 
 /** header */
@@ -53,12 +73,18 @@ header {
 
 header section {
     background-color: blue;
-    min-height: 400px;
+    min-height: 300px;
 }
+
+/** main */
 
 #main-header {
     background-color: goldenrod;
     border: 1px dashed black;
     min-height: 300px;
     flex-basis: 100%;
+}
+
+main section:nth-child(2n+0) {
+    background-color: #cecece;
 }
