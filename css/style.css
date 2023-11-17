@@ -1,4 +1,4 @@
-/* Todo CSS Reset */
+/*Todo CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@
 
 /*# Generics */
 
-header {
-    background-color: aqua;
+main section {
+    padding: 20px;
 }
 
 /*# Utils */
@@ -16,13 +16,13 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
 }
 
 .little-container {
     max-width: 900px;
-    margin: 0px auto;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
 .flex-container {
@@ -54,6 +54,10 @@ header {
 
 /** header */
 
+header {
+    background-color: lightsteelblue;
+}
+
 #box-logo,
 #box-link,
 #box-login {
@@ -79,7 +83,7 @@ header section {
 /** main */
 
 #main-header {
-    background-color: goldenrod;
+    background-color: violet;
     border: 1px dashed black;
     min-height: 300px;
     flex-basis: 100%;
@@ -87,4 +91,54 @@ header section {
 
 main section:nth-child(2n+0) {
     background-color: #cecece;
+}
+
+/** footer */
+
+footer {
+    background-color: rgb(67, 67, 67);
+}
+
+.adress {
+    background-color: orange;
+    border: 1px dashed black;
+    flex-basis: 30%;
+    min-height: 450px;
+}
+
+.deck {
+    display: flex;
+    flex-basis: 70%;
+}
+
+.card {
+    background-color: darkolivegreen;
+    border: 1px dashed #fff;
+    flex-basis: 25%;
+}
+
+.container-special {
+    background-color: chocolate;
+    max-width: 1160px;
+    min-height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacts {
+    padding: 40px 20px 20px 20px;
+}
+
+#signin {
+    margin-top: 20px;
+}
+
+.logo,
+.bottone {
+    height: 40px;
+    width: 90px;
+    background-color: lightgreen;
+    border: 1px dashed black;
 }
