@@ -4,3 +4,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*# Generics */
+
+header {
+    background-color: aqua;
+}
+
+/*# Utils */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.small-container {
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+/** header */
+
+#box-logo,
+#box-link,
+#box-login {
+    background-color: goldenrod;
+    border: 1px dashed black;
+    min-height: 50px;
+}
+
+#box-logo,
+#box-login {
+    flex-basis: 20%;
+}
+
+#box-link {
+    flex-basis: 60%;
+}
+
+header section {
+    background-color: blue;
+    min-height: 400px;
+}
+
+#main-header {
+    background-color: goldenrod;
+    border: 1px dashed black;
+    min-height: 300px;
+    flex-basis: 100%;
+}
